@@ -42,11 +42,11 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 
 .signup-wrapper {
-  margin-top: 45px;
+  margin-top: 5vh;
   padding: 40px 20px 40px 20px;
   display: flex;
   justify-content: flex-start;
@@ -59,7 +59,7 @@ h3 {
 }
 
 .signup-wrapper2 {
-  margin: 0px 0px 45px 0px;
+  margin: 5vh 0px 45px 0px;
   padding: 40px 20px 40px 20px;
   display: flex;
   justify-content: flex-start;
