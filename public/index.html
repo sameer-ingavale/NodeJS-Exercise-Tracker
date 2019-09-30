@@ -31,6 +31,14 @@
               required
             />
             <button class="add-username-button" type="submit">Sign up</button>
+            <button
+              class="add-username-button"
+              type="submit"
+              style="background-color: #444C55"
+              onclick=" window.location.href='/add-exercise'"
+            >
+              Log an Exercise →
+            </button>
           </form>
           <!-- <a href="/add-exercise" target="_blank" class="submit-button"
             >Add Exercise</a
@@ -39,30 +47,21 @@
       </div>
       <div class="mainWrapper">
         <div class="text-wrapper">
-          <h3>User Stories</h3>
+          <h3>Exercise Tracker - User Stories</h3>
           <ul>
             <li>
-              I can enter a URL in the input field and I will receive a
-              shortened URL in the JSON response.
+              I can create a username, which if valid gets added to the
+              database.
             </li>
             <li>
-              When I visit that shortened URL, it will redirect me to my
-              original link.
+              Using the username I created in the previous step, I can log
+              exercises in the database.
             </li>
             <li>
-              If I pass an invalid URL, it will respond with an error message.
+              Logging an exercise returns a running list of exercies for my
+              username.
             </li>
           </ul>
-          <h3>Example Usage</h3>
-          <code>
-            <a
-              href="https://sameers-url-shortener.herokuapp.com/YCoy9ID1"
-              target="_blank"
-              class="code"
-            >
-              "https://sameers-url-shortener.herokuapp.com/YCoy9ID1</a
-            ></code
-          >
         </div>
       </div>
 

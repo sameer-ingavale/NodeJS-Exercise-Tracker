@@ -33,12 +33,6 @@ a:hover {
   color: #00ad9e;
 }
 
-h1 {
-  font-family: lato;
-  text-align: center;
-  line-height: 2.2rem;
-}
-
 h3 {
   font-family: lato;
 }
@@ -52,7 +46,7 @@ h3 {
 }
 
 .signup-wrapper {
-  margin-top: 50px;
+  margin-top: 45px;
   padding: 40px 20px 40px 20px;
   display: flex;
   justify-content: flex-start;
@@ -60,7 +54,7 @@ h3 {
   flex-direction: column;
   background-color: #f4f6f8;
   width: 405px;
-  height: 185px;
+  height: 250px;
   border: 0.5px solid #dfe3e8;
 }
 
@@ -73,7 +67,7 @@ h3 {
   flex-direction: column;
   background-color: #f4f6f8;
   width: 405px;
-  height: 320px;
+  height: 390px;
   border: 0.5px solid #dfe3e8;
 }
 
@@ -127,6 +121,10 @@ h3 {
   font-family: lato;
   font-size: 14px;
   box-shadow: 0px 0px 3px 0px rgba(24, 199, 108, 0.2);
+}
+
+.add-username-button:hover {
+  box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 0.1) inset;
 }
 
 .add-username-button:focus {

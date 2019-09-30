@@ -29,9 +29,15 @@ router.post("/add-exercise", async (req, res) => {
     if (user) {
       user.exercises.push(update);
       user.save();
-      res.json({ "exercise-record": user.exercises });
+      res.json({ username: user.username, "exercise-log": user.exercises });
     } else {
-      res.json("username does not exist");
+      res.json({
+        "Error Message": "username does not exist",
+        "Go back to homepage":
+          "https://sameers-exercise-tracker.herokuapp.com/",
+        "Log an Exercise":
+          "https://sameers-exercise-tracker.herokuapp.com/add-exercise"
+      });
     }
   } catch (error) {
     console.error(error.message);

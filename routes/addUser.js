@@ -20,9 +20,18 @@ router.post("/add-user", async (req, res) => {
     });
 
     user.save();
-    res.redirect("/add-exercise");
+    res.json({
+      Message: "Username succesfully created!",
+      "Log an Exercise":
+        "https://sameers-exercise-tracker.herokuapp.com/add-exercise"
+    });
   } else {
-    res.send(user);
+    res.json({
+      "Error Message": "Username taken. Try a different username",
+      "Go back to homepage": "https://sameers-exercise-tracker.herokuapp.com/",
+      "Log an Exercise":
+        "https://sameers-exercise-tracker.herokuapp.com/add-exercise"
+    });
   }
 });
 
